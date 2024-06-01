@@ -58,22 +58,22 @@ function fpsmenu()
                     if (Selected) then
                         SetLow()
                     end
-                end)
+                end, fpsmenu)
                 RageUI.ButtonWithStyle("Niedrige Texturen", nil, {RightLabel = nil}, true, function(Hovered, Active, Selected)
                     if (Selected) then
                         SetLowTexture()
                     end
-                end)
+                end, fpsmenu)
                 RageUI.ButtonWithStyle("Scheiß PC (Mein Beileid)", nil, {RightLabel = nil}, true, function(Hovered, Active, Selected)
                     if (Selected) then
                         SetNoGpu()
                     end
-                end)
+                end, fpsmenu)
                 RageUI.ButtonWithStyle("Grafik zurücksetzen", nil, {RightLabel = nil}, true, function(Hovered, Active, Selected)
                     if (Selected) then
                         ResetGraphics()
                     end
-                end)
+                end, fpsmenu)
 			end, function()
 			end)
               if not RageUI.Visible(fpsmenu) and not RageUI.Visible(fpsmenuSub) then
